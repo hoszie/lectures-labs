@@ -31,7 +31,10 @@ function sum(a,b){ //eslint-disable-line
 
 // Here is the test for sum(); uncomment it to run it
 testSum(4, 7);
+sum (4,5);
 
+var newArray = ['hi', 'bye', 'ciao'];
+console.log(newArray[1]);
 
 
 
@@ -95,11 +98,19 @@ new branch for your work on the next question!
 
 // Write your code here
 function sumAndMultiply(a,b,c){ //eslint-disable-line
-
+   var firstSum = sum (a, b)[0];
+   console.log(firstSum);
+   var firstSumNumber = firstSum[0];
+   console.log(firstSumNumber);
+   var total = sum (firstSum, c)[0];
+   var firstProduct = multiply(a,b)[0];
+   var totalProduct = multiply(firstProduct, c)[0];
+   return [total, totalProduct, a + ' and ' + b + ' and ' + c + ' sum to ' + total + '.', 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + totalProduct + '.'];
 }
 
+
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5);
 
 
 /////////////////////////////////////
