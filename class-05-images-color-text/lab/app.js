@@ -174,10 +174,10 @@ new branch for your work on the next question!
 
 // Write your code here
 function multiplyArray(testArray){ //eslint-disable-line
-    var provar = multiply (testArray[0], testArray[1])[0];
-    var totalpro1 = multiply (provar, testArray[2])[0];
-    return [totalpro1, "The numbers 2,3,4 have a product of 24." ];
-}
+  var provar = multiply (testArray[0], testArray[1])[0];
+  var totalpro1 = multiply (provar, testArray[2])[0];
+  return [totalpro1, "The numbers 2,3,4 have a product of 24." ];
+} 
 
 // Here is the test for multiplyArray(); uncomment it to run it
 testMultiplyArray(2,3,4);
