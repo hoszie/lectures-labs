@@ -99,7 +99,6 @@ new branch for your work on the next question!
 // Write your code here
 function sumAndMultiply(a,b,c){ //eslint-disable-line
    var firstSum = sum (a, b)[0];
-   console.log(firstSum);
    var firstSumNumber = firstSum[0];
    console.log(firstSumNumber);
    var total = sum (firstSum, c)[0];
@@ -140,11 +139,13 @@ new branch for your work on the next question!
 var testArray = [2,3,4]; //eslint-disable-line
 
 function sumArray(testArray){ //eslint-disable-line
-
+    
+    var sumvar = sum (testArray[0], testArray[1])[0];
+    var totalSum1 = sum (sumvar, testArray[2])[0];
+    return [totalSum1, "2,3,4 was passed in as an array of numbers, and 9 is their sum."];
 }
-
 // Here is the test for sumArray(); uncomment it to run it
-// testSumArray(testArray);
+testSumArray(testArray);
 
 
 /////////////////////////////////////
@@ -173,8 +174,10 @@ new branch for your work on the next question!
 
 // Write your code here
 function multiplyArray(testArray){ //eslint-disable-line
-
+    var provar = multiply (testArray[0], testArray[1])[0];
+    var totalpro1 = multiply (provar, testArray[2])[0];
+    return [totalpro1, "The numbers 2,3,4 have a product of 24." ];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(2,3,4);
+testMultiplyArray(2,3,4);
